@@ -1,0 +1,44 @@
+
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
+.btn {
+    padding: 10px 20px;
+    max-width: 200px;  
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+.btn::after{
+    content: "";
+    height: 3px;
+    margin-top: 5px;
+    width: 0;
+    background-color: black;
+    display: block;
+    transition: all ease-in-out 300ms;
+}
+.btn:hover::after{
+    width: 100%;
+}
+.btn:nth-child(1){
+    background-color: purple;
+}
+.btn:nth-child(2){
+    background-color: yellow;
+}
+.btn:nth-child(3){
+    background-color: green;
+}
+.btn:nth-child(4){
+    background-color: white;
+}
+.btn:nth-child(5){
+    background-color: lavender;
+}
